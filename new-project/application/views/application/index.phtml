@@ -1,0 +1,28 @@
+<table class="table table-dark">
+    <thead>
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nome</th>
+        <th scope="col">Preço</th>
+        <th scope="col">Categoria</th>
+        <th scope="col"></th>
+    </tr>
+    </thead>
+    <tbody>
+
+    <?php foreach($this->products as $product) : ?>
+        <tr>
+            <th scope="row"><?php echo $product->getId() ?></th>
+            <td><?php echo $product->getName() ?></td>
+            <td><?php echo $product->getPrice() ?></td>
+            <td>@mdo</td>
+            <td>
+                <a href="#">
+                    <span class="glyphicon glyphicon-trash"></span>
+                </a>
+            </td>
+        </tr>
+    <?php endforeach; ?>
+    </tbody>
+</table>
+<button type="button" class="btn btn-success btn-lg">Incluir Novo</button>

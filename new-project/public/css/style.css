@@ -1,0 +1,11 @@
+#main{
+    margin-top: 50px;
+    width: 80%;
+}
+
+.glyphicon-trash{
+    color: #ffffff;
+}
+.glyphicon-trash:hover{
+    color: #b21f2d;
+}
